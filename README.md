@@ -34,6 +34,21 @@ In this example we fetch data from the Rick and Morty API when the user changes 
   setName(event: any) {
     this.characterName.set(event.target.value);
   }
-``
 
+```
+
+We also included the new Vite + esbuild for building our application
+
+just including this code in our angular.json:
+
+```json
+{
+  //...
+  "architect": {
+    "build": {
+      "builder": "@angular-devkit/build-angular:browser-esbuild"
+      //...
+    }
+  }
+}
 ```

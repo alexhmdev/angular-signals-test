@@ -1,0 +1,21 @@
+.card {
+  display: flex;
+  gap: 1rem /*16px*/;
+  border-radius: 1rem;
+  background: #fafafa;
+  padding: 0.5rem;
+  filter: drop-shadow(2px 2px 2px);
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}

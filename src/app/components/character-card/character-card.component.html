@@ -1,0 +1,12 @@
+<article class="card">
+  <img
+    src="{{
+      character?.image ??
+        'https://rickandmortyapi.com/api/character/avatar/1.jpeg'
+    }}"
+    alt="{{ character?.name ?? 'Rick Sanchez' }}"
+  />
+  <p>
+    Name: <strong>{{ character?.name ?? "Rick Sanchez" }}</strong>
+  </p>
+</article>
